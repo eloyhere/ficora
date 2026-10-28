@@ -1,0 +1,27 @@
+export const THEME_PRESETS = [
+  { value: 'default', en: 'Default', zh: '默认' },
+  { value: 'dark', en: 'Dark', zh: '暗夜黑' },
+  { value: 'space-gray', en: 'Space gray', zh: '星河灰' },
+  { value: 'gray', en: 'Gray', zh: '雾灰' },
+  { value: 'light-gray', en: 'Light gray', zh: '浅灰' },
+  { value: 'milk', en: 'Milk white', zh: '牛奶白' },
+  { value: 'sky-blue', en: 'Sky blue', zh: '晴空蓝' },
+  { value: 'pale-blue', en: 'Pale blue', zh: '薄雾蓝' },
+  { value: 'deep-blue', en: 'Deep blue', zh: '深海蓝' },
+  { value: 'green', en: 'Green', zh: '新芽绿' },
+  { value: 'light-green', en: 'Light green', zh: '浅绿' },
+  { value: 'deep-green', en: 'Deep green', zh: '深林绿' },
+  { value: 'orange', en: 'Orange', zh: '橙光' },
+  { value: 'yellow', en: 'Yellow', zh: '日光黄' },
+  { value: 'lemon', en: 'Lemon', zh: '柠檬黄' },
+  { value: 'red', en: 'Red', zh: '赤红' },
+  { value: 'rose', en: 'Rose', zh: '玫瑰' },
+  { value: 'accessible', en: 'Accessible', zh: '高可读性' },
+  { value: 'accessible-dark', en: 'Accessible dark', zh: '高可读性暗色' },
+  { value: 'protanopia', en: 'Protanopia', zh: '红色盲友好' },
+  { value: 'deuteranopia', en: 'Deuteranopia', zh: '绿色盲友好' },
+  { value: 'tritanopia', en: 'Tritanopia', zh: '蓝色盲友好' },
+  { value: 'achromatopsia', en: 'Achromatopsia', zh: '全色盲友好' },
+] as const
+
+export type ThemePresetId = typeof THEME_PRESETS[number]['value']
